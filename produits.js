@@ -8,7 +8,8 @@ ajax.get("http://localhost:3000/api/cameras/" + idArticle)
     addProduct(product);
   },
     () => {
-      // Todo: Traiter les erreurs
+      alert("Désolé, cette id n'est pas valide !")
+      location.href = "index.html";
     }
   );
 
